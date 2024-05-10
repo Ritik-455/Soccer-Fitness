@@ -1,38 +1,417 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/***********************padding-margin***************************/
+.mt-neg-3 {
+  margin-top: -3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mt-32 {
+  margin-top: 32px;
+}
+
+.py-download {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mt-13 {
+  margin-top: 13px;
+}
+
+.mt-29 {
+  margin-top: 29px;
+}
+
+.mt-47 {
+  margin-top: 47px;
+}
+
+.pb-send {
+  padding-bottom: 50px;
+}
+
+.py-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.py-author {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.mt-19 {
+  margin-top: 19px;
+}
+
+.pt-69 {
+  padding-top: 69px;
+}
+
+/***********************padding-margin*************************/
+
+.container-2 {
+  max-width: 1164px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.cmn-btn {
+  padding: 13.47px 8.78px;
+  background: #FCE500;
+  border: none;
+  border-radius: 1.01px;
+  transition: 0.3s linear;
+}
+
+.max-w-520 {
+  max-width: 520px;
+}
+
+.img-width-2 {
+  max-width: 539px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+
+.bg-hero {
+  background-image: url(./assets/Images/PNG/bg-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 820px;
+}
+
+.ff-euro {
+  font-family: 'Eurostile Extended';
+}
+
+.ff-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.download-box {
+  max-width: 1102px;
+  width: 100%;
+  border-radius: 24px;
+  background: #33333330;
+  border: 1px solid #FCE500C7;
+  padding: 26px 18px 21px 13px;
+}
+
+.form-box {
+  max-width: 522px;
+  width: 100%;
+  background: #F2F2F31A;
+  padding: 16px 0px 12px 22px;
+  outline: none;
+  border: 0.5px solid transparent;
+}
+
+.form-box:focus {
+  border: 0.5px solid #FCE500
+}
+
+.max-w-522 {
+  max-width: 522px;
+}
+
+.bg-knowledge {
+  background-image: url(./assets/Images/PNG/bg-knowledge.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.max-w-539 {
+  max-width: 539px;
+}
+
+.max-w-502 {
+  max-width: 502px;
+}
+
+.img-width {
+  width: 100%;
+  max-width: 440px;
+}
+
+@font-face {
+  font-family: 'Eurostile Extended';
+  src: url(./assets/Fonts/EurostileBQ-BoldExtended.otf);
+}
+
+.bg-lineargradient {
+  background: linear-gradient(0deg, rgba(15, 15, 15, 1) 22%, rgba(0, 0, 0, 1) 22%);
+}
+
+.fitness-box {
+  max-width: 1140px;
+  width: 100%;
+  background-color: var(--color-yellow);
+  padding: 20px 0px 27px 14px;
+  border-radius: 16px;
+}
+
+.download-btn {
+  padding: 16.26px 14.22px;
+  border-radius: 1.01px;
+  background: #010101;
+  border: none;
+  transition: 0.3s linear;
+}
+
+.download-btn:hover {
+  scale: 0.95;
+}
+
+.lap-pos {
+  top: -36%;
+  right: 0%;
+}
+
+.bg-light-black {
+  background: #0F0F0F;
+
+}
+
+.icon-box {
+  width: 39px;
+  height: 39px;
+  background: #FCE500;
+  border-radius: 50%;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.footer-line {
+  border: 1px solid #8A8A8A;
+  margin-top: 23px;
+}
+
+.box-ellips {
+  width: 648px;
+  height: 167px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  filter: blur(663px);
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.down-pos {
+  top: 0;
+  right: 0;
+}
+
+.box-ellips-pos {
+  top: 22%;
+}
+
+.send-pos {
+  top: 0;
+  left: 0;
+}
+
+.author-pos {
+  top: 5%;
+  right: 0;
+}
+
+.author-pos-2 {
+  bottom: 4%;
+  left: 0;
+
+}
+
+.img-pos {
+  bottom: -18%;
+  left: -20%;
+  z-index: 3;
+}
+
+.button-border {
+  border: 0.5px solid #FCE500;
+  padding: 6.75px 6.44px 6.31px 7.01px;
+}
+
+.btn-black-border {
+  width: 22px;
+  height: 2px;
+  background-color: black;
+}
+
+.line-pos {
+  bottom: -1.5px;
+  left: 25%;
+}
+
+.w-contant {
+  width: fit-content;
+}
+
+.btn-border-2 {
+  border: 0.5px solid black;
+  padding: 8px 9.36px 7.48px 10.2px;
+}
+
+.btn-black-border-2 {
+  width: 22px;
+  height: 4px;
+  background-color: #FCE500;
+}
+
+.line-pos2 {
+  bottom: -1.5px;
+  left: 25%;
+}
+
+.cmn-btn:hover {
+  color: yellow;
+  background-color: #01010158;
+}
+
+.lap-ellips {
+  width: 382px;
+  height: 200px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  filter: blur(125px);
+}
+
+.lap-elips-pos {
+  top: 19%;
+  left: 9%;
+}
+
+@media (min-width:768px) {
+  .lh-sm-59 {
+    line-height: 40.4px;
+  }
+
+  .lh-sm-62 {
+    line-height: 62.04px;
+  }
+
+  .lh-sm-37 {
+    line-height: 37.5px;
+  }
+
+  .download-box {
+    padding: 31px 26px 21px 18px;
+  }
+
+  .fitness-box {
+    padding: 33px 0px 33px 22px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width:992px) {
+  .bg-hero {
+    background-size: 100% 100%;
+    min-height: 100vh;
+  }
+
+  .lh-sm-59 {
+    line-height: 40.4px;
+  }
+
+  .py-download {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .img-width {
+    max-width: 304.13px;
+    height: 427.83px;
+  }
+
+  .pb-send {
+    padding-bottom: 75px;
+  }
+
+  .py-author {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .fitness-box {
+    padding: 52px 0px 43px 50px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media (min-width:1200px) {
+  .text_nowrap {
+    text-wrap: nowrap;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .py-download {
+    padding-top: 182px;
+    padding-bottom: 164px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .download-box {
+    padding: 63px 53px 50px 54px;
   }
+
+  .pb-send {
+    padding-bottom: 168px;
+  }
+
+  .py-author {
+    padding-top: 115px;
+    padding-bottom: 312px;
+  }
+
+  .position-xl-absolute {
+    position: absolute;
+  }
+
 }
